@@ -64,13 +64,3 @@ If you'd like to contribute to this project, feel free to fork the repository an
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Flask for making web development easier.
-- SQLite for providing a lightweight, easy-to-use database solution.
-- The CSCI-GA 2433 course for offering this fun and challenging project opportunity! 
-
----
-
-Feel free to reach out if you have any questions or run into any issues. Enjoy building and exploring the music streaming server!
