@@ -1,0 +1,75 @@
+/* 页面根样式 */
+.song-detail-page {
+    padding: 2rem;
+    background-color: #181818;
+    color: #fff;
+}
+
+/* 标题样式 */
+.song-detail-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* 歌曲信息段落样式 */
+.song-detail-page p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 评分区域样式 */
+.song-detail-page div {
+    margin-top: 1rem;
+}
+
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #303030;
+    color: #fff;
+}
+
+input[type="number"]:focus,
+textarea:focus {
+    outline: 2px solid #ff4500;
+}
+
+/* 提交按钮样式 */
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff4500;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+/* 评论区域样式 */
+.comments {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #202020;
+    border-radius: 8px;
+}
+
+.comments div {
+    margin-bottom: 1rem;
+}
+
+.comments p {
+    color: #ddd;
+}
+
+.comments small {
+    color: #888;
+}

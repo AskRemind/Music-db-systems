@@ -1,0 +1,127 @@
+/* subscription.css */
+
+.subscription-page {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+.subscription-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1db954; 
+}
+
+
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.plan-card {
+    background-color: #292929;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+
+.plan-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.plan-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.plan-card button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1db954;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan-card button:hover {
+    background-color: #169840;
+}
+
+.subscription-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #202020;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-align: left;
+}
+
+
+.subscription-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff4500;
+}
+
+
+.subscription-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.subscription-form input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #292929;
+    color: #fff;
+}
+
+
+.subscription-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+    background-color: #ff6347;
+}
+
+
+.message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ff4500;
+}
