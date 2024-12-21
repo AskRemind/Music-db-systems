@@ -25,50 +25,21 @@ This server is designed to handle basic interactions typically found in a music 
 To get started with this project on your local machine, follow the steps below:
 
 ### Prerequisites
-1. **Python**: Ensure you have the latest version of Python installed. You can download it from [python.org](https://www.python.org/downloads/).
+1. **Python**: Ensure you have the latest version of Python installed. 
    
-2. **Required Libraries**: You will need to install the following libraries:
-   - Flask
-   - SQLite (which is included with Python by default)
-
-   You can install the necessary dependencies using pip:
-   
-bash
-   pip install -r requirements.txt
-
+2. **Required Libraries**: You will need to install the following libraries in requirements.
 
 ### Running the Project
 
 1. Clone the repository:
-   
-bash
-   git clone https://github.com/your-username/music-streaming-server.git
-   cd music-streaming-server
-
 
 2. Set up your local Python environment:
-   - If you’re using a virtual environment (recommended):
-     
-bash
-     python -m venv venv
-     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
-   
 3. Install the dependencies:
-   
-bash
-   pip install -r requirements.txt
-
 
 4. Run the server:
    
-bash
-   python app.py
-
-
-   This will start the Flask server on http://localhost:5000.
-
-5. Open your browser and navigate to http://localhost:5000 to access the application.
+This will start the Flask server on http://localhost:5000.
 
 ## Database
 
