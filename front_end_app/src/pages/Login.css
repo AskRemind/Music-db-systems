@@ -1,0 +1,84 @@
+/* General page style */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1db954, #121212);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Login card container */
+.login-card {
+    background: #292929;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Title and subtitle */
+.login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+/* Input fields */
+.login-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #333333;
+    color: white;
+}
+
+.login-input:focus {
+    outline: none;
+    background: #444444;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #1db954;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #169840;
+}
+
+/* Links */
+.login-links {
+    margin-top: 20px;
+}
+
+.register-link {
+    color: #1db954;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover {
+    color: #169840;
+}

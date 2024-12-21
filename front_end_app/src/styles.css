@@ -1,0 +1,104 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818; /* 深色背景 */
+    color: #fff; /* 浅色字体 */
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 顶部导航栏样式 */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .navbar .user-profile button {
+    padding: 0.5rem 1rem;
+    background-color: #ff4500;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .navbar .user-profile button:hover {
+    background-color: #ff6347;
+  }
+  
+  /* 侧边栏样式 */
+  .sidebar {
+    width: 200px;
+    background-color: #121212;
+    padding: 1rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #ff4500;
+  }
+  
+  /* 主体内容区域样式 */
+  .main {
+    margin-left: 200px; /* 为侧边栏留出空间 */
+    padding: 2rem;
+  }
+  
+  .page {
+    background-color: #202020;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  

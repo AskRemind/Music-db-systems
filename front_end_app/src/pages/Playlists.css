@@ -1,0 +1,130 @@
+/* Playlists.css */
+
+.playlist-page {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    padding: 2rem;
+    min-height: 100vh;
+    text-align: center; /* 居中显示内容 */
+}
+
+.create-playlist form {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center; /* 居中表单 */
+    gap: 1rem;
+}
+
+.create-playlist input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    font-size: 1rem;
+}
+
+.create-playlist button {
+    padding: 0.5rem 1rem;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.create-playlist button:hover {
+    background-color: #1ed760;
+}
+
+.playlists-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 居中歌单卡片 */
+    gap: 1rem;
+}
+
+.playlist-card {
+    background-color: #292929;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.playlist-card button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.playlist-card button:hover {
+    background-color: #ff6347;
+}
+
+.playlist-details {
+    margin-top: 2rem;
+    background-color: #202020;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block; /* 保持内容宽度适配 */
+    text-align: center; /* 居中显示内容 */
+}
+
+.playlist-details h2 {
+    margin-bottom: 1rem;
+}
+
+.playlist-details form {
+    display: flex;
+    justify-content: center; /* 居中表单 */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.playlist-details input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    font-size: 1rem;
+}
+
+.playlist-details button {
+    padding: 0.5rem 1rem;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.playlist-details button:hover {
+    background-color: #1ed760;
+}
+
+.songs-container .song-card {
+    background-color: #292929;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center; 
+}
+
+.message {
+    margin-top: 1rem;
+    color: #ff4500;
+    font-size: 1rem;
+}
+
