@@ -2,14 +2,19 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+def init_db(app):
+    db.init_app(app)
+
 class User(db.Model):
     __tablename__ = 'user'
-    UserID = db.Column(db.Integer, primary_key=True)
-    Name = db.Column(db.String(100), nullable=False)
+    UserID = db.Column(db.String(50), primary_key=True)
+    FirstName = db.Column(db.String(255), nullable=False)
+    LastName = db.Column(db.String(255), nullable=False)
     Email = db.Column(db.String(100), unique=True, nullable=False)
     Age = db.Column(db.Integer)
     Country = db.Column(db.String(50))
     Gender = db.Column(db.String(1))
+    PasswordHash = db.Column(db.String(255), nullable=False)
 
 class UserRating(db.Model):
     RatingID = db.Column(db.Integer, primary_key=True)
@@ -70,7 +75,7 @@ class Follow(db.Model):
     __tablename__ = 'follow'
     FollowID = db.Column(db.Integer, primary_key=True)
     UserID = db.Column(db.Integer, db.ForeignKey('user.UserID'))
-    FollowedID = db.Column(db.Integer, db.ForeignKey('ArtistID'))
+    FollowedID = db.Column(db.Integer, db.ForeignKey('artist.ArtistID'))
     FollowType = db.Column(db.Enum('Artist'), nullable=False)
 
 class Subscription(db.Model):

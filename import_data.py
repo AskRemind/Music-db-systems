@@ -12,25 +12,22 @@ def import_data(file_path):
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                # 插入 Artist
                 artist_name = row['artist_name']
                 artist = Artist.query.filter_by(Name=artist_name).first()
                 if not artist:
-                    artist = Artist(Name=artist_name, Country='Unknown')  # 缺少国家信息时设为 Unknown
+                    artist = Artist(Name=artist_name, Country='Unknown')
                     db.session.add(artist)
-                    db.session.flush()  # 提交以获取 ArtistID
+                    db.session.flush()
 
-                # 插入 Album
                 album_title = f"Album of {artist_name}"
                 release_date = row.get('release_date', None)
 
-                # 将 release_date 转换为 Python 的 date 对象
                 if release_date and release_date.isdigit():
                     release_date = datetime.strptime(release_date, "%Y").date()
-                elif release_date:  # 如果是完整的日期格式（例如 YYYY-MM-DD）
+                elif release_date:
                     release_date = datetime.strptime(release_date, "%Y-%m-%d").date()
                 else:
-                    release_date = None  # 没有 release_date 时设为 None
+                    release_date = None
 
                 album = Album.query.filter_by(Title=album_title, ArtistID=artist.ArtistID).first()
                 if not album:
@@ -38,7 +35,6 @@ def import_data(file_path):
                     db.session.add(album)
                     db.session.flush()
 
-                # 插入 Song
                 song = Song(
                     Title=row['track_name'],
                     ArtistID=artist.ArtistID,
@@ -53,5 +49,6 @@ def import_data(file_path):
 
 if __name__ == '__main__':
     import_data('data/song_dataset.csv')
+
 
 
