@@ -1,4 +1,4 @@
-# CSCI-GA 2433 2024 Fall Final Project
+# CSCI-GA 2433 2024 Fall Final Project —— Backend Server
 
 ## Project Overview
 This is the **Final Project** for CSCI-GA 2433 (Software Engineering) in Fall 2024. The project implements a **small-scale backend server** for a music streaming application using **Python Flask** and integrates an **SQLite database** to support various use cases.
